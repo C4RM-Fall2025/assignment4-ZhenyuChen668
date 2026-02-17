@@ -1,4 +1,4 @@
-from BondPrice_File import getBondPrice
+
 def getBondDuration(y, face, couponRate, m, ppy=1):
     r = y / ppy
     N = m * ppy
@@ -12,5 +12,6 @@ def getBondDuration(y, face, couponRate, m, ppy=1):
         T += (t / ppy) * (cf / (1 + r) ** t)
     bondDuration = T / bondPrice
     return bondDuration
+
 
 
